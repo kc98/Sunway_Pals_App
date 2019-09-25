@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="PERSONAL INFORMATION">
+            <menu>
+                <item
+                    android:id="@+id/nav_points"
+                    android:title="@string/menu_points" />
+                <item
+                    android:id="@+id/nav_vouchers"
+                    android:title="@string/menu_vouchers" />
+                <item
+                    android:id="@+id/nav_benefits"
+                    android:title="@string/menu_benefits" />
+                <item
+                    android:id="@+id/nav_cards"
+                    android:title="@string/menu_cards" />
+                <item
+                    android:id="@+id/nav_pin"
+                    android:title="@string/menu_pin" />
+                <item
+                    android:id="@+id/nav_password"
+                    android:title="@string/menu_password" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="SUPPORT">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:title="@string/menu_contact" />
+            <item
+                android:id="@+id/nav_app_guide"
+                android:title="@string/menu_app_guide" />
+            <item
+                android:id="@+id/nav_pals_guide"
+                android:title="@string/menu_pals_guide" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="@string/menu_about" />
+            <item
+                android:id="@+id/nav_terms_and_conditions"
+                android:title="@string/menu_terms_conditions" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="112dp">
+
+    <RelativeLayout
+        android:id="@+id/personal-point-row"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/colorAccent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/account"
+                android:layout_width="54dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@mipmap/ic_account" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="265dp"
+                android:layout_marginBottom="25dp"
+                android:text="Yeap Khor Chin"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/account"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="181dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="219dp"
+                android:text="1,041.59 POINTS"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/account" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView6"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_voucher_ticket" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="47dp"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/card-scroll-view"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_below="@id/personal-point-row">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDD9D9">
+
+            <ImageView
+                android:id="@+id/pals1"
+                android:layout_width="330dp"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/pals1" />
+
+            <ImageView
+                android:id="@+id/pals2"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pals2" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/card-icon-pic"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_below="@id/card-scroll-view"
+        android:layout_marginTop="1dp"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageButton
+                android:id="@+id/imageView3"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                app:srcCompat="@mipmap/ic_card" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="106dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/imageView3"
+                android:gravity="center"
+                android:text="MANAGE"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout2"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#000000" >
+
+            <ImageButton
+                android:id="@+id/imageView4"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                app:srcCompat="@mipmap/ic_bookmark_card" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="120dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/imageView4"
+                android:gravity="center"
+                android:text="SET AS DEFAULT"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout3"
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageButton
+                android:id="@+id/imageView5"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#000000"
+                app:srcCompat="@mipmap/ic_add_card" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="106dp"
+                android:layout_height="18dp"
+                android:layout_below="@id/imageView5"
+                android:gravity="center"
+                android:text="ADD CARD"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/promo-scroll-view"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_below="@id/card-icon-pic">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DDD9D9">
+
+            <ImageView
+                android:id="@+id/promo1"
+                android:layout_width="410dp"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/promo1" />
+
+            <ImageView
+                android:id="@+id/promo2"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/promo2" />
+
+            <ImageView
+                android:id="@+id/promo3"
+                android:layout_width="410dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/promo3" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/promo-scroll-view"/>
+
+</RelativeLayout>

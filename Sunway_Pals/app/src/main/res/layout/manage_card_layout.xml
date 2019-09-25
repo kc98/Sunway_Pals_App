@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/toolbar1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_back"
+            android:background="@null"
+            android:layout_gravity="left"
+            android:id="@+id/action_back"
+            android:onClick="goHome"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MANAGE CARD"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/toolbar_title"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_below="@id/toolbar1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="212dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="0.5"
+                android:gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/pals1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="212dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:paddingLeft="10dp"
+                android:gravity="left"
+                android:text="Pals Benefits 2017"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/textView"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:baselineAligned="false"
+                    android:gravity="left"
+                    android:text="2001 0100 1734 8750"
+                    android:textColor="#585252"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="212dp"
+                android:layout_height="110dp"
+                android:layout_gravity="right|top"
+                android:layout_weight="3"
+                android:gravity="right|top">
+
+                <ImageButton
+                    android:id="@+id/imageView7"
+                    android:layout_width="21dp"
+                    android:layout_height="58dp"
+                    android:background="@null"
+                    android:stretchColumns="0,1"
+                    app:srcCompat="@mipmap/ic_three_dots" />
+            </RelativeLayout>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

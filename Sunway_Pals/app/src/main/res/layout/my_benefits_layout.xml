@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/toolbar1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_back"
+            android:background="@null"
+            android:layout_gravity="left"
+            android:id="@+id/action_back"
+            android:onClick="goHome"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:paddingTop="25dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_below="@id/toolbar1"
+        android:text="We appreciate your continuius trust in Suway, from key life investment to daily purchases."
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:id="@+id/text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:paddingTop="2dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_below="@id/text"
+        android:text="Therefore we strive to reward you in every possible way!"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:id="@+id/text1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/text1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:id="@+id/relative1">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_ferris_wheel"
+                android:background="@color/colorBlack"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center"
+                android:background="@color/colorBlack"
+                android:text="THEME PARK"
+                android:layout_below="@+id/imageView9"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView1"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/ic_building"
+                android:background="@color/colorBlack"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_below="@id/textView3"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:gravity="center"
+                android:background="@color/colorBlack"
+                android:text="HOSPITALITY"
+                android:layout_below="@+id/imageView10"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

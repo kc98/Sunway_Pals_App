@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/searchViewBar"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/colorAccent">
+
+        <SearchView
+            android:id="@+id/SearchView"
+            android:layout_width="384dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="11dp"
+            android:background="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:layout_below="@id/searchViewBar"
+        android:background="#000000">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="212dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/border_right_bottom_layout"
+                android:gravity="center_horizontal|center_vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_mall_cart" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="MALL"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:background="@drawable/border_bottom_layout"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_building" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton1"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="HOSPITALITY"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/border_right_bottom_layout"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_ferris_wheel" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton2"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="LEISURE"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:background="@drawable/border_bottom_layout"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_house" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton3"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="PROPERTY"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/border_right_bottom_layout"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_education" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton4"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="EDUCATION"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:background="@drawable/border_bottom_layout"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_healthcare" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton5"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="HEALTHCARE"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="@drawable/border_right_bottom_layout"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_map" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton6"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="NATIONWIDE"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:background="@drawable/border_bottom_layout"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_weight="1" >
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_horizontal|center_vertical"
+                    app:srcCompat="@mipmap/ic_two_cards" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/imageButton7"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="PARTNERSHIP"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

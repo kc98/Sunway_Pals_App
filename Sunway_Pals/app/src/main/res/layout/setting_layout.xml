@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:id="@+id/toolbar1"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_back"
+            android:background="@null"
+            android:layout_gravity="left"
+            android:id="@+id/action_back"
+            android:onClick="goHome"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/toolbar_title"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar1"
+        android:background="#D8D2D1">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="607dp"
+                android:background="@color/colorWhite"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="8dp"
+                android:text="Version"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/app_version_asn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:paddingRight="10dp"
+                android:gravity="right"
+                android:text="1.0.41"
+                android:textColor="#777272"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/app_version_asn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="left"
+                android:paddingLeft="12dp"
+                android:paddingRight="10dp"
+                android:text="NOTIFICATIONS"
+                android:textColor="#777272"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/notification"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="132dp"
+                android:background="@color/colorWhite"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="Notifications"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/notification"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="@+id/notification"
+                app:layout_constraintTop_toTopOf="@+id/notification"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/notif_vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="176dp"
+                android:background="@color/colorWhite"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="Vibrate"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/notif_vibrate"
+                app:layout_constraintEnd_toEndOf="@+id/notif_vibrate"
+                app:layout_constraintHorizontal_bias="0.98"
+                app:layout_constraintStart_toStartOf="@+id/notif_vibrate"
+                app:layout_constraintTop_toTopOf="@+id/notif_vibrate" />
+
+            <TextView
+                android:id="@+id/app_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="248dp"
+                android:background="#928B8B"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="Logout"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>
